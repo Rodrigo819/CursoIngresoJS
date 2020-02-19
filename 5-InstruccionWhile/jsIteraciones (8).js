@@ -7,7 +7,17 @@ function mostrar()
 	var acumulador;
 	
 	var respuesta='si';
-
+	do{
+		while(confirm("¿Agregar numeros?"))
+		numero = prompt("¿Quiere agregar algun numero?");
+		numero = parseInt(numero);
+		if (numero > 0)
+		positivo = parseInt(positivo);
+		positivo += numero
+	}
+	else{
+	}
+/*
 while(confirm("Quiere agregar algun numero")){
 	numero = prompt("Ingrese un numero");
 	numero = parseInt(numero);
@@ -20,7 +30,7 @@ while(confirm("Quiere agregar algun numero")){
 		negativo = parseInt(negativo);
 		negativo *= numero;
 	}
-while(isNaN(numero)){
+	while(isNaN(numero)){
 	numero = prompt("Ingrese un numero valido");
 	numero = parseInt(numero);
 
